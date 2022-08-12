@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+body{
+    overflow: hidden;
+}
+body > #main{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+#app1{
+    border: 1px solid #ffe600;
+    width: 50vw;
+    height: 50vh;
+    text-align: center;
+    padding-top: 17vh;
+    line-height:50px;
+}
+#app1 .btnInput>button{
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background-color: #ffe600;
+}
+
+#app2 {
+    border: 1px solid #ffe600;
+    width: 50vw;
+    height: 50vh;
+    text-align: center;
+}
+
+#app2 > .tabBar > li {
+    border: 1px solid #ffe600;
+    float: left;
+    width: 50%;
+    padding: 20px;
+    color: black;
+}
+
+#app2 > .tabContent > li {
+    margin-top: 25vh;
+    display: none;
+}
+
+#app2 > .tabContent > li.active {
+    display: block;
+}
+
+#app2 > .tabBar > li.selected {
+    background-color:  #ffe600;
+}
+#app3 {
+    border: 1px solid #ffe600;
+    width: 50vw;
+    height: 50vh;
+}
+
+#app3 .square{
+    width: 80px;
+    height:80px;
+    background-color: #ffe600;
+    margin-top:20vh;
+    transition: transform 1s;
+}
+
+#app3 .square.active{
+    transform: translateX(40vw);
+}
+
+#app4 {
+    border: 1px solid #ffe600;
+    width: 50vw;
+    height: 50vh;
+}
+
+@keyframes colorChange {
+    0%{
+        background-color: #ffe600;
+    }
+    25%{
+        background-color: #3ab4e8;
+    }
+    50%{
+        background-color: #a84bd7;
+    }
+    100%{
+        background-color: #69ee69;
+    }
+}
+
+#app4 .circle{
+    width: 200px;
+    height:200px;
+    margin-top:12vh;
+    margin-left: 35vh;
+    border-radius: 50%;
+    background-color: #ffe600;
+}
+
+#app4 .circle.active{
+    animation: colorChange 2s infinite linear alternate;
+}
+
+/*# sourceMappingURL=main.6acb14f2.css.map */
