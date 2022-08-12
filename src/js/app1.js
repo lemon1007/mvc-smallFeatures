@@ -86,7 +86,7 @@ const controller = {
             const value = controller[controller.events[key]];
             const spaceIndex = key.indexOf(' ');
             const eventStatus = key.slice(0, spaceIndex);
-            const eventIName = key.slice(spaceIndex);
+            const eventIName = key.slice(spaceIndex + 1);
             // click events 执行函数
             view.el.on(eventStatus, eventIName, value)
         }
