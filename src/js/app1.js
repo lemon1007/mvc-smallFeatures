@@ -17,7 +17,7 @@ const model = {
     update(data) {
         Object.assign(model.data, data);
         eventBus.trigger('dataUpdate');
-        localStorage.setItem('n',model.data.n.toString())
+        localStorage.setItem('n', model.data.n.toString())
     },
 }
 
@@ -25,7 +25,6 @@ const model = {
 const view = {
     el: null,
     html: `
-        <div>
             <div class="output">
                 <span id="number">{{n}}</span>
             </div>
@@ -34,8 +33,7 @@ const view = {
                 <button id="minus">-1</button>
                 <button id="mul">x2</button>
                 <button id="divide">÷2</button>
-            </div>
-        </div>`,
+            </div>`,
 
     // 初始化一个不变的容器
     init(container) {
@@ -90,7 +88,7 @@ const controller = {
             const eventStatus = key.slice(0, spaceIndex);
             const eventIName = key.slice(spaceIndex);
             // click events 执行函数
-            view.el.on(eventStatus,eventIName,value)
+            view.el.on(eventStatus, eventIName, value)
         }
     }
 }
