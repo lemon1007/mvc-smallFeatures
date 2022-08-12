@@ -1,0 +1,17 @@
+#app3 {
+    border: 1px solid #ffe600;
+    width: 50vw;
+    height: 50vh;
+}
+
+#app3 .square{
+    width: 80px;
+    height:80px;
+    background-color: #ffe600;
+    margin-top:20vh;
+    transition: transform 1s;
+}
+
+#app3 .square.active{
+    transform: translateX(40vw);
+}

@@ -1,0 +1,14 @@
+#app1{
+    border: 1px solid #ffe600;
+    width: 50vw;
+    height: 50vh;
+    text-align: center;
+    padding-top: 17vh;
+    line-height:50px;
+}
+#app1 .btnInput>button{
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background-color: #ffe600;
+}

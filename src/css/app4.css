@@ -1,0 +1,33 @@
+#app4 {
+    border: 1px solid #ffe600;
+    width: 50vw;
+    height: 50vh;
+}
+
+@keyframes colorChange {
+    0%{
+        background-color: #ffe600;
+    }
+    25%{
+        background-color: #3ab4e8;
+    }
+    50%{
+        background-color: #a84bd7;
+    }
+    100%{
+        background-color: #69ee69;
+    }
+}
+
+#app4 .circle{
+    width: 200px;
+    height:200px;
+    margin-top:12vh;
+    margin-left: 35vh;
+    border-radius: 50%;
+    background-color: #ffe600;
+}
+
+#app4 .circle.active{
+    animation: colorChange 2s infinite linear alternate;
+}
