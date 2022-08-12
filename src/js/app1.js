@@ -17,7 +17,7 @@ const model = {
     update(data) {
         Object.assign(model.data, data);
         eventBus.trigger('dataUpdate');
-        localStorage.setItem('n', model.data.n.toString())
+        localStorage.setItem('n', model.data.n)
     },
 }
 
