@@ -11,13 +11,13 @@ const eventBus = $({})
 const model = {
     data: {
         // 初始化，取出内存中存储的n，并将其转化成int类型赋值给n
-        n: parseInt(localStorage.getItem('n'))
+        n: parseInt(localStorage.getItem('n') || 100)
     },
     // 页面中数据发生变化则触发eventBus.trigger
     update(data) {
         Object.assign(model.data, data);
         eventBus.trigger('dataUpdate');
-        localStorage.setItem('n', model.data.n)
+        localStorage.setItem('n', model.data.n.toString())
     },
 }
 
